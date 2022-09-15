@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - program that prints either number
+ * Fizz_Buzz - program that prints either number
  * or fizz or buzz or fizzBuzz
  *
  *
  * Return: returns 0
  */
 
-int main(void)
+void Fizz_Buzz(void)
 {
 	int num = 1;
 
@@ -24,7 +25,7 @@ int main(void)
 		}
 		else if ((num % 5) == 0)
 		{
-			if (num = 100)
+			if (num != 100)
 			{
 				printf("Buzz ");
 			}
