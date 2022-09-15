@@ -4,7 +4,7 @@
 /**
  * print_triangle - prints a triangle
  * @size: size parameter of triangle
- * Reurns: Always 0
+ * Reurns: returns nothing
  */
 
 void print_triangle(int size)
@@ -17,17 +17,19 @@ void print_triangle(int size)
 		{
 			for ((inc2 = size - inc1); inc2 > 0; inc2--)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 			for (inc2 = 0; inc2 < inc1; inc2++)
 			{
-				_putchar('#');
+				putchar('#');
 			}
 			if (inc1 == size)
 			{
 				continue;
 			}
-			_putchar('\n');
+			putchar('\n');
+
+			return (0);
 		}
 	}
 }
