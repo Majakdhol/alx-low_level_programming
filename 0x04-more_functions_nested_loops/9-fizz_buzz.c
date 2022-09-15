@@ -1,14 +1,11 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - program that prints either number
  * or fizz or buzz or fizzBuzz
  *
- *
- * Return: return 0
+ * Return: returns 0
  */
-
 int main(void)
 {
 	int num = 1;
@@ -29,6 +26,10 @@ int main(void)
 			{
 				printf("Buzz ");
 			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
@@ -39,4 +40,3 @@ int main(void)
 
 	return (0);
 }
-
