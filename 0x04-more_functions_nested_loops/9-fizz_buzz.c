@@ -5,6 +5,7 @@
  * main - program that prints either number
  * or fizz or buzz or fizzBuzz
  *
+ *
  * Return: AlwAYS 0
  */
 
