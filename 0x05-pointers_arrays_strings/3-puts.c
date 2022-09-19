@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string>
+#include <stdio.h>
 
 
 /**
@@ -8,9 +8,12 @@
  */
 void _puts(char *str)
 {
-	for (; *str != '\0'; str++)
+	int i = 0;
+
+	while (*(str + i) != '\0')
 	{
-		_putchar(*str);
+		_putchar(*(str + i) != '\0')
+		i++;
 	}
-	_putchar('\n');
+	_putchar(10);
 }
