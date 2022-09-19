@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string>
+
 
 /**
  * _puts - this is a function that puts
