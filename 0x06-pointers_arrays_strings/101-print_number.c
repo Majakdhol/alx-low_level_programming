@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * rot13 - rot13 encoder
- * @str: string to be encoded
+ * print_number - prints an integer
+ * @n: integer to be printed
  *
- * Return: address of the encoded string
+ * Return: Always success
  */
-char *rot13(char *str)
+void print_number(int n)
 {
-	int i = 0;
+	unsigned int num = n;
 
-	while (str[i] != '\0')
+	if (n < 0)
 	{
-		str[i] = transform_2(str[i]);
-		i++;
+		_putchar('-');
+		num = -num;
 	}
-	return (str);
+	if ((num / 10) > 0)
+		print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
