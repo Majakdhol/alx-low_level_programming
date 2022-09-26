@@ -6,7 +6,7 @@
  * @a: the matrix of integers.
  * @size: the size of the matrix.
  *
- * Return: void
+ * Return: Always success
  */
 void print_diagsums(int *a, int size)
 {
@@ -19,9 +19,11 @@ void print_diagsums(int *a, int size)
 	{
 		sum1 = sum1 + a[i + size + i];
 	}
+
 	for (i = size - 1; i >= 0; i--)
 	{
 		sum2 += a[i * size + (size - i - 1)];
 	}
+
 	printf("%d, %d\n", sum1, sum2);
 }
