@@ -21,7 +21,7 @@ int word_len(char *str)
 }
 
 /**
- * count_words - counts the number of words
+ * count_word - counts the number of words
  * @str: the string to be searched
  *
  * Return: Always success
@@ -47,9 +47,9 @@ int count_word(char *str)
 /**
  * strtow - splits a function into words
  * @str: the string to be split
- *
  * Return: Always success
  */
+
 char **strtow(char *str)
 {
 	char **strings;
