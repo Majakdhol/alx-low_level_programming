@@ -1,30 +1,55 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * str_concat - a function that concatenates two strings
- * @s1: first string
- * @s2: second string
+ * _strlen - counts array
+ * @s: array of element
+ *
+ * Return: Always success
+ */
+int _strlen(char *s)
+{
+	unsigned int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+
+}
+
+/**
+ * str_concat - back a pointer to array
+ * @s1: array one
+ * @s2: array two
  *
  * Return: Always success
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *concat_str;
-	int index, concat_index = 0, len = 0;
+	char *dst;
+	unsigned int i, j, size;
 
-	if(s1 == NULL)
+	if (s1 == NULL)
 		s1 = "";
-	if(s2 == NULL)
-		s2 == "";
-	for (index = 0; s1[index] || s2[index]; index++)
-		len++;
-	concat_str = malloc(sizeof(char) * len);
-	if (concat_str == NULL)
+	if (s2 == NULL)
+		s2 = "";
+
+	size = (_strlen(s1) + _strlen(s2) + 1);
+
+	dst = (char *) malloc(size * sizeof(char));
+
+	if (dst == 0)
+	{
 		return (NULL);
-	for (index = 0; s1[index]; index++)
-		concat_str[concat_index++] = s1[index];
-	for (index = 0; s2[index]; index++)
-		concat_str[concat_index++] = s2[index];
-	return (concat_str);
+	}
+	for (i = 0; *(s1 + i) != '\0';i++)
+		*(dst + i) = *(s1 + i);
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(dst + i) = *(s2 + j);
+		i++;
+	}
+	return (dst);
 }
