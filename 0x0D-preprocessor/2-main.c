@@ -7,6 +7,8 @@
  */
 int main(void)
 {
-	printf("%s\n", _flie_);
+	printf("%s\n", _flie_)
+
+
 	return (0);
 }
