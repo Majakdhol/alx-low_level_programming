@@ -2,10 +2,10 @@
 
 /**
  * flip_bits - returns the number of bites you would need to flip
- * @n: number 1
- * @m: number 2
+ * @n: number one
+ * @m: number two
  *
- * Return: Always success
+ * Return: number of bits
  */
 unsigned int flip_bits(unsigned long int n, usigned long int m)
 {
