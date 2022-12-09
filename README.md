@@ -1,1 +1,1 @@
-Positive anything is better than negative nothing
+0x17. C - Doubly linked lists
