@@ -1,7 +1,6 @@
 #include "lists.h"
 
 
-
 /**
  *free_dlistint - free list
  *@head: pointer to head
